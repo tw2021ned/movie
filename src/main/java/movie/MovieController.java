@@ -18,6 +18,8 @@ public class MovieController {
     @GetMapping("/movies")
     public List<Movie> retrieveAllStudents() {
         return movieRepository.findAll();
+        
+        
     }
 
     @GetMapping("/movies/{id}")
